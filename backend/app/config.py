@@ -8,11 +8,10 @@ except ImportError:  # pragma: no cover
 
 class Settings(BaseSettings):
     cloudinary_cloud_name: str = "Commonground"
-    cloudinary_api_key: str = "917111857843855"
-    cloudinary_api_secret: str = "vLw8aknoFnLPTmbq2trvgDrpQzw"
+    cloudinary_api_key: str = ""
+    cloudinary_api_secret: str = ""
     database_url: str = "postgresql://neondb_owner:"
-    secret_key: str="neondb_owner:npg_WsxJ5va2Fqrg@ep-fragrant-glade-azcr4q2g-pooler.c-3.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
-    access_token_expire_minutes: int = 30
+    secret_key: str=""
     enable_docs: bool = False
 
     if SettingsConfigDict is dict:
