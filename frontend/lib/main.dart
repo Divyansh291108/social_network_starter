@@ -7,7 +7,11 @@ import 'package:http/http.dart' as http;
 import 'package:web/web.dart' as web;
 
 // For Flutter Web on the same computer, use 127.0.0.1.
-const String apiBaseUrl = 'http://127.0.0.1:8000';
+//const String apiBaseUrl = 'http://127.0.0.1:8000';
+const String apiBaseUrl = String.fromEnvironment(
+  'API_BASE_URL',
+  defaultValue: 'http://127.0.0.1:8000',
+);
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
